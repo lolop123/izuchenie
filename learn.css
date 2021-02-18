@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;  
+    margin: 0;
+    padding : 0;            /*сбить дефолтные настройки*/
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+width: 1140px;
+margin: 0 auto;
+}
+.promo{
+   
+
+    height: 800px;
+    background-image: url('/LearnImg/2-layers.png') ;
+    background: no-repeat center cover;
+    padding: 39px  0 62px 0 ;  /*внутренний отступ сверху,справа, снизу, слева*/
+}  
+.logoimg{
+    display: block;
+    margin: 0 auto;
+    
+}
+.logotext{
+color: #ffffff;
+
+font-size: 15px;
+font-weight: 500;  /*жирность*/
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;           /*расстояние между строчками*/
+text-align: center;
+margin-top: 14px;
+
+ 
+}
+.txt2{
+    /* Style for "Создать св" */
+
+color: #f9bf3b;
+
+font-size: 41px;
+font-weight: 900;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "С, оздать" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+margin: 0 auto; margin-top: 53px;
+}
+
+.titleBig{
+    /* Style for "это просто" */
+
+color: #ffffff;
+
+font-size: 80px;
+font-weight: 900;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "это просто" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.title{
+     /* Style for "Куда сложн" */
+
+color: #f9bf3b;
+
+font-size: 41px;
+font-weight: 900;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "К, уда сло" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.txt3{
+/* Style for "Ежедневно" */
+width: 1114px;
+height: 76px;
+color: #ffffff;
+font-size: 21px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 28px;
+text-align: center;
+margin-top: 23px;
+
+/* Text style for "БЕСПЛАТНОМ" */
+}
+.sp{
+    color: #f9bf3b;
+  
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+}
+.btn1{
+    display: block;         /*изначально кнопка инлайн*/
+width: 313px;
+height: 72px;
+box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);         /*смещение по x, y, размытие*/
+border: 4px solid rgba(0, 0, 0, 0.23);                  /*солид спkjiyjq*/
+background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+margin: 0 auto;
+margin-top: 101px;
+/* Style for "Записаться" */
+
+text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+color: #ffffff;
+font-size: 21px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "З, аписать" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+cursor: pointer;
+outline: none;
+}
+.more{
+    margin-top: 73px;
+
+}
+.moretxt{
+
+/* Style for "узнать бол" */
+
+color: #ffffff;
+
+font-size: 15px;
+font-weight: 100;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "узнать бол" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+
+}
+.moreimg{
+display: block;
+margin: 0 auto;
+margin-top: 13px;
+/* Style for "Rounded Re" */
+
+
+
+}
+.waiting{
+    min-height: 604px;
+background-color: #efefef;
+padding: 85px;
+}
+.ftxt{
+    /* Style for "Что вас жд" */
+
+height: 26px;
+color: #252525;
+
+font-size: 30px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "Ч, то вас" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.phot{
+    display: block;
+    margin: 0 auto;
+    /* Style for "Rectangle" */
+width: 217px;
+height: 4px;
+background-color: #f9bf3b;
+margin-top: 18px;
+}
+.ftxt2{
+
+height: 23px;
+color: #4a4a4a;
+
+font-size: 23px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 20px;
+text-align: center;
+/* Text style for "2 бесплатн" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+margin-top: 17px;
+}
+.wrapper{
+    margin-top: 45px;
+    margin-left: 300px;
+}
+.waitingitem{
+    display: inline-block;
+    vertical-align: top;    /*прижать к верху*/
+   margin-right: 48px;
+   
+}
+.desc{
+    /* Style for "Покажем, к" */
+width: 339px;
+height: 77px;
+color: #4a4a4a;
+
+font-size: 15px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 21px;
+text-align: center;
+/* Text style for "Покажем, к" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.girl{
+    height: 604px;
+background-color: white;
+}
+.hh{
+    /* Style for "Что такое" */
+    position: relative;
+    z-index: 3;
+margin-left: 781px;
+margin-top: 102px;
+height: 27px;
+color: #299cbd;
+
+font-size: 30px;
+font-weight: 900;
+font-style: normal;
+letter-spacing: normal;
+line-height: 12px;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "Ч, то тако" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.hhh{
+    /* Style for "На простор" */
+    position: relative;
+    z-index: 2;
+    margin-left: 779px;
+    margin-top: 25px;
+width: 750px;
+height: 289px;
+color: #4a4a4a;
+
+font-size: 17px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 27px;
+text-align: justifyLeft;
+/* Text style for "На простор" */
+
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+/* Text style for "Мы научим" */
+
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.girll{
+    position:absolute;
+    top: 1450px;
+    z-index: 1;
+    margin-left: 150px;
+    margin-top: 48px;
+}
+/*boreder-width отступ между элементами
+border-style: solid;
+border-color: ; цвет обводки
+display inline ведет себя как строка, идет в право и не перемтавляется
+display block имба
+display inline block ставит блоки в линию
+position relative 
+left,top,bottom 30px прибавить слева 30 пикслелей
+position absolute
+работает в диве relative, выступает поверх
+ position fixed чтобы при скроллинге элемент оставался
+ position inherit
+ взять родительский позишн
+z-index: 5; у кого з индекс больше тот и ближе к лицу польщователя
+установить -1 чтобы абсолютно позиционированные элементы сьебали
+
+float left все нижние блоки будут обтекать эл справа
+  */
+.dwa{
+       /*выровнять элементы контейнера по вертикали и центрироваить*/
+    /*justify-content: space-between;    */
+    /*justify-content: space-arround;    */
+    /*flex-wrap:wrap;                  переносить при переполнении*/
+     
+    align-items: center;
+height: 447px;
+padding: 86px;
+background-image: url(/LearnImg/2l.png);
+background: no-repeat center cover;
+}
+.hhhh{
+    /* Style for "По окончан" */
+
+height: 21px;
+color: #efefef;
+
+font-size: 30px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "П, о оконч" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.hhhh__wrapper {
+    display: flex;
+      margin-top: -30px;
+}
+.hhhh__round {
+    /* Style for "Ellipse 1" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 109px;
+width: 115px;
+height: 115px;
+background-color: #b4e2ff;
+border-radius: 90px; 
+
+}
+
+.imggg{
+    
+    
+    
+width: 56px;
+height: 63px;
+}
+
+.imggg__tetxt{
+    /* Base style */
+  margin-top: -90px;
+    height: 32px;
+    color: #efefef;
+   
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+}
+.pod {
+    padding: 147px;
+    height: 628px;
+}
+.imgp{
+ display: block;
+margin-left: auto;
+margin-right: auto;
+ 
+height: 60px;
+background-color: #f9bf3b;
+}
+.podimg {
+    /* Style for "Layer 35" */
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 113px;
+background-color: #a7d2ed;
+}
+.pod__text {
+    /* Style for "Для всех у" */
+    margin-top: 42px;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 1131px;
+height: 115px;
+color: #252525;
+
+font-size: 30px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 43px;
+text-align: center;
+/* Text style for "Д, ля всех" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.btn1 {
+    display: block;
+    margin-top: 52px;
+}

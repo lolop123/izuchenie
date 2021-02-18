@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,kBAAc;CAAG",
+    "sources": [
+        "../node_modules/bootstrap/dist/css/stule.sass"
+    ],
+    "names": [],
+    "file": "stule.css"
+}
