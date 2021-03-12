@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="16 style.css">
+    <link rel="stylesheet" href="16 style.css?<?=time()?">
 </head>
+
 <body>
     <div class="box" id="box"></div>
     <div class="wrapper2">
@@ -20,21 +22,46 @@
         <li>0</li>
         <li>1</li>
         <li>2</li>
-      </ol>
-      
-      
-      <a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a>
-      <form action="/action_page.php">
+    </ol>
+
+
+    <a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a>
+    <form action="/action_page.php">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname" disabled><br><br>
         <input type="submit" value="Submit">
-      </form>
-      <label for="rub">rub</label>
-      <input id="rub" type="text">
-      <label for="usd">usd</label>
-     <input id="usd" type="text">
-      <script src="main.js"></script>
+    </form>
+    <label for="rub">rub</label>
+    <input id="rub" type="text">
+    <label for="usd">usd</label>
+    <input id="usd" type="text">
+
+    <div class="overlay fade">
+        <div class="popup">
+            <div class="popup-close">&times;
+            </div>
+            <div class="popup-title">
+                Форма обратной связи</div>
+            <div class="popup-form">
+                <form action="#" id="firstone" class="main-form">
+                    <div class="popup-form-header">
+                        Узнайте больше о своём отдыхе
+                    </div>
+                    <label class="popup-form__label" for="phone">
+                        Введите ваш номер телефона:
+                    </label>
+                    <input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
+                    <button class="button popup-form__btn">
+                        Оставить заявку!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js?<?=time()?"></script>
 </body>
+
 </html>

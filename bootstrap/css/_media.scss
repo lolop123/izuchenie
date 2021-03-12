@@ -1,0 +1,85 @@
+@media (max-width: 1400px) {
+      nav {
+            /* Style for "Rectangle" */
+            width: auto;
+            min-height: 67px;
+            background-color: #212121;
+            padding: 10px 70px;
+      }
+
+      .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .menu_item {
+            display: inline-block;
+            margin: 5px;
+
+            border-right: 2px dotted black;
+            padding-right: 15px;
+      }
+      .menu_link {
+            margin: 0 auto;
+            text-decoration: none;
+            height: 14px;
+            color: #ffffff;
+
+            font-size: 1px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 68px;
+            text-align: left;
+            /* Text style for "Г, лавная" */
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+      }
+
+      .third {
+            flex: 0 0 auto;
+            width: 1356px;
+            height: 650px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+
+            margin-left: -23%;
+
+            display: flex;
+            justify-content: space-around;
+
+            &__newcont {
+                  display: flex;
+                  height: 650px;
+                  width: 981px;
+                  margin-right: auto;
+                  margin-left: auto;
+                  flex-wrap: wrap;
+            }
+
+            &__1 {
+                  width: 490px;
+                  height: 150px;
+                  margin-top: 30px;
+
+                  flex: 0 0 auto;
+
+                  .imege {
+                        display: inline-block;
+                        width: 114px;
+                        height: 114px;
+                        display: inline;
+                        flex: 0 0 auto;
+                        margin-bottom: 130px;
+                  }
+                  .ppp {
+                        display: inline-block;
+                        width: 341px;
+                        height: 141px;
+                        flex: 0 0 auto;
+                  }
+            }
+      }
+}

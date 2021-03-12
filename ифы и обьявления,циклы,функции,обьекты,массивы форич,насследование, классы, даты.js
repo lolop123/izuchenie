@@ -8,13 +8,13 @@ let isBoss = confirm("Ты здесь главный?"); //булл да/нет
 //Number(value) String(value) меняют тип
 //if (year == 2015) alert( 'Вы правы!' );
 message =
-  age < 3
-    ? "Здравствуй, малыш!"
-    : age < 18
-    ? "Привет!"
-    : age < 100
-    ? "Здравствуйте!"
-    : "Какой необычный возраст!";
+  age < 3 ?
+  "Здравствуй, малыш!" :
+  age < 18 ?
+  "Привет!" :
+  age < 100 ?
+  "Здравствуйте!" :
+  "Какой необычный возраст!";
 if (age < 3) {
   message = "Здравствуй, малыш!";
 } else if (age < 18) {
@@ -95,7 +95,7 @@ let sayHi = () => alert("Hello!");
 let welcome = age < 18 ? () => alert("Привет") : () => alert("Здравствуйте!");
 //#endregion
 //#region Обьекты
-console.log(+obj);     // 10        -- желаемый тип (hint) - "number"
+console.log(+obj); // 10        -- желаемый тип (hint) - "number"
 console.log(`${obj}`); // "hello"   -- желаемый тип (hint) - "string"
 console.log(obj + ''); // "true"    -- желаемый тип (hint) - "default"
 let obj = {
@@ -109,22 +109,24 @@ let obj = {
     return true;
   },
   width: 1024,
-  height : 1024,
-  name : "ilia",
+  height: 1024,
+  name: "ilia",
   "+49": "Германия",
   sayHi() {
     // this - это "текущий объект"
     alert(this.name);
   };
-  go: function() { alert(this); }
-  
+  go: function () {
+    alert(this);
+  }
+
 
 }
-alert( obj?.address ); // undefined
+alert(obj ? .address); // undefined
 
-user?.sayHi(x++); // нет user, поэтому до x++ вычисление не дойдет
-user1.admin?.(); // Я администратор
-user2.admin?.();
+user ? .sayHi(x++); // нет user, поэтому до x++ вычисление не дойдет
+user1.admin ? .(); // Я администратор
+user2.admin ? .();
 
 let clone = {}; // новый пустой объект
 
@@ -134,14 +136,13 @@ let clone = Object.assign({}, obj);
 
 
 obj.new1 = '115l';
-obj.colors =
-{
+obj.colors = {
   border: 'black',
   bg: 'red'
 }
 delete obj.name;
 
-for(let key in obj){
+for (let key in obj) {
   obj[key] += '1';
   console.log(key);
 }
@@ -156,42 +157,39 @@ console.log(obj)
 
 
 
-let arr = [1,2,3]
+let arr = [1, 2, 3]
 
-arr.pop();//удалить последний
-arr.push('5');//добавить в конец
-arr.shift();//удалить последнее
-arr.unshift('0');//добавить в начало
+arr.pop(); //удалить последний
+arr.push('5'); //добавить в конец
+arr.shift(); //удалить последнее
+arr.unshift('0'); //добавить в начало
 
-for (let i = 0; i < arr,length; i++) {
+for (let i = 0; i < arr, length; i++) {
   //
   console.write(arr[i]);
 }
-arr.forEach(function(item,index,array)
-{
-  console.log(i + item + "массив: " + array)//эррей выведет весь массив
+arr.forEach(function (item, index, array) {
+  console.log(i + item + "массив: " + array) //эррей выведет весь массив
+})
+
+let ans = prompt("", "");
+
+let arr = ['lol', 'hui'];
+arr = ans.split(','); //берет элементы из первого массива и разделяет по запятой
+let i = arr.join(', '); //склеивает в одну строку весь массив через запятую
+let i = arr.sort(CompareNow); //сортирует но только буквы по алфавиту
+
+function CompareNow(a, b) {
+  return a - b;
 }
-)
-
-let ans = prompt("",""); 
-
-let arr = ['lol','hui'];
-arr = ans.split(',');//берет элементы из первого массива и разделяет по запятой
-let i = arr.join(', ');//склеивает в одну строку весь массив через запятую
-let i = arr.sort(CompareNow);//сортирует но только буквы по алфавиту
-
-function CompareNow(a,b)
-{
-return a - b;
-}
-  //#endregion
+//#endregion
 //#region наследование
 let soldier = {
   damage: 1000,
   health: 500
 }
 let John = {
-  name : john
+  name: john
 }
 john._proto_ = soldier;
 console.log(John.damage)
@@ -201,10 +199,11 @@ class User {
   constructor(name) {
     this.name = name;
   }
-  
+
   name = "Аноним";
 
-#sayHi() {              //приватная функция
+  #
+  sayHi() { //приватная функция
     alert(this.name);
   }
   get sayHi() {
@@ -221,7 +220,7 @@ class User {
     }
     this._name = value;
   }
-  static staticMethod() {       //для внутриклассовых функций
+  static staticMethod() { //для внутриклассовых функций
     alert(this === User);
   }
 }
@@ -270,18 +269,17 @@ setTime(milliseconds) */
 alert(+new Date) // +date то же самое, что: +date.valueOf()
 console.log(end.toString());
 
-var ms = Date.parse('2012-01-26T13:51:50.417-03:00');         //- d концце это указание GMT
-                                                              //Существуют также UTC-варианты этих методов, возвращающие день, месяц, год и т.п. для зоны GMT+0 (UTC): getUTCFullYear(),
-                                                              // getUTCMonth(), getUTCDay(). То есть, сразу после "get" вставляется "UTC".
-alert( ms ); // 1327611110417 (число миллисекунд)
+var ms = Date.parse('2012-01-26T13:51:50.417-03:00'); //- d концце это указание GMT
+//Существуют также UTC-варианты этих методов, возвращающие день, месяц, год и т.п. для зоны GMT+0 (UTC): getUTCFullYear(),
+// getUTCMonth(), getUTCDay(). То есть, сразу после "get" вставляется "UTC".
+alert(ms); // 1327611110417 (число миллисекунд)
 //#endregion
 //#region интерполяция `${}` и spread
-let name2 = 'ivan', age = 30, last = 'hui';
+let name2 = 'ivan',
+  age = 30,
+  last = 'hui';
 //document.write(`пользователю ${name2} ${age} лет он ${last}`);
 let game = [name2, 'hex'];
-let video = [...game, 'lpl'];   //выводит без дополнительных кавычек
+let video = [...game, 'lpl']; //выводит без дополнительных кавычек
 console.log(video);
 //#endregion
-
-
-
